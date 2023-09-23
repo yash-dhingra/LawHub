@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             
           <a class="navbar-brand" href="#">
             <img src="./house-check-fill.svg" alt="Bootstrap" width="30" height="24">
-            LawLelo
+            LawHub
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,7 +43,7 @@
               </li>
             </ul>
             <div>
-              <button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Sign In</button>
+              <button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap" id="hello">Sign In</button>
 
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -69,6 +70,23 @@
             <label for="recipient-name" class="col-form-label">Confirm Password</label>
             <input type="password" class="form-control" id="recipient-name">
           </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Address:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Pin Code</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Country</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Field of Law</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+
         </form>
       </div>
       <div class="modal-footer">
@@ -80,7 +98,7 @@
 </div>
 </div>
 <div>
-<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@getbootstrap">Log In</button>
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@getbootstrap" id="sign">Log In</button>
 
 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -103,33 +121,129 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
 </div>
 </div>
-
-            
-          </div>
+   </div>
         </div>
       </nav>
-      <div class="container-fluid px-4 py-4 h-80" id="featured-3" >
+
+      <!-- 3 -->
+    
+      <div class="container px-4 py-4 h-80" id="featured-3" >
       <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="parent">
+          <div class="container mt-5 name" >
+            <div class="row">
+              <div class ="col-xl-4 col-lg-4 px-2 col-md-5 col pt-2">
+                <form>
+                  Select CITY : <select id="city">
+                    <option>select city---</option>
+                    <option>Delhi</option>
+                    
+                    <option>Lucknow</option>
+                    <option>Ahmedabad</option>
+<option>Bengaluru/Bangalore</option>
+
+<option>Chennai</option>
+
+<option>Gurgaon</option>
+<option>Hyderabad/Secunderabad</option>
+<option>Kolkatta</option>
+<option>Mumbai</option>
+<option>Noida</option>
+<option>Pune</option>
+
+<option>Hyderabad/Secunderabad</option>
+
+<option>Visakhapatnam</option> 
+<option>Itanagar</option>
+<option>Guwahati</option>
+<option>Patna</option>
+<option>Surat</option>
+
+<option>Shimla</option>
+
+<option>Srinagar</option>
+<option>Mangalore</option>
+<option>Mysoru/Mysore</option>
+<option>Chandigarh</option>
+<option>Jalandhar</option>
+<option>Ludhiana</option>
+<option>Allahabad</option>
+<option>Bareilly</option>
+<option>Faizabad</option>
+<option>Ghaziabad</option>
+<option>Gorakhpur</option>
+<option>Kanpur</option>
+<option>Mathura</option>
+<option>Meerut</option>
+<option>Moradabad</option>
+<option>Dehradun</option>
+<option>Roorkee</option>
+<option>Durgapur</option>
+
+
+                  </select>
+                </form>
+              </div>
+    
+              <div class ="col-xl-4 col-lg-4 px-2 col-md-5 col pt-2 ">
+                <form>
+                  Your Advocate Requirement : <select id="lawyer">
+                    <option>Select your advocate --</option>
+                    <option>Property lawyer</option>
+                    <option>Criminal defense lawyer</option>
+                    <option>Corporate lawyer</option>
+                    <option>Public Defender</option>
+                    <option>Family lawyer</option>
+                    <option>Bankruptcy Lawyer</option>
+                    <option>Immigration lawyer</option>
+                    <option>Real estate lawyer</option>
+                    <option>Divorce lawyer</option>
+                  </select>
+                </form>
+                
+              </div>
+              <div class="col-lg-3 col-6 py-3">
+                <a href="./search.html"><button type="button" class="btn btn-dark">search</button></a> 
+             </div>
+                
+            </div>
+            </div>
+          
+          </div>
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./conny-schneider-3hkKv6WzjcE-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item active hi">
+            <img src="./0aedcd3f-8bd4-4862-a9ad-66adbba78d1d.jpg" class="d-block w-100 bro" alt="...">
+          <div class="on">
+            <p>1234 People are online</p>
+            <button type="button" class="btn btn-primary">Primary</button>
           </div>
-          <div class="carousel-item">
-            <img src="./tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item hi">
+            <img src="./1a04db08-b4be-4b48-83fb-fcf693d8dd9a.jpg" class="d-block w-100" alt="...">
+            <div class="on">
+              <p>9450 People are online</p>
+              <button type="button" class="btn btn-success">Primary</button>
+
+            </div>
+          </div>
+          <div class="carousel-item hi">
             <img src="./gabrielle-henderson-HJckKnwCXxQ-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="on">
+              <p>5678 People are online</p>
+              <button type="button" class="btn btn-light">Primary</button>
+
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -149,8 +263,8 @@
         <div class="card" style="width: 18rem;">
           <div class="card-body ">
             <h5 class="card-title">Online Consultation with the lawyer</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="./discusscase.html" class="btn btn-primary">Consult Now</a>
+            <p class="card-text">Getting the right legal advice is important because it helps you know your rights and gives you a better chance for a positive outcome.Gain a legal edge from the comfort of your home with our ONLINE LEGAL CONSULTATION SERVICE </p>
+           
           </div>
         </div> 
       </div>
@@ -159,18 +273,15 @@
 
           <div class="card-body">
             <h5 class="card-title">Maximise your property investments with our Property legal solutions</h5>
-            <p class="card-text">Trusted Property Legal Services. We help you take the right Property investment decisions.</p>
-            <a href="./property.html" class="btn btn-primary">Get Consultation</a>
+            <p class="card-text">According to the Registration Act of 1908,it is a requirement in India for all real estate transactions to be registered.To gain the rights to the property as of the deed's execution date, the transfer of immovable property must be recorded</p>
           </div>
         </div> 
       </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col gap-2 py-3 ">
+      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 col gap-2 py-3">
         <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Document related issues handled by our Expert 
-              Proffessionals</h5>
-            <p class="card-text">Corporate, HR, professional or personal, Get any legal document drafted and customised to your business or personal needs in the most affordable way.                                                                                 </p>
-            <a href="#" class="btn btn-primary">Get Your Document Verified </a>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Document related issues handled by our Expert Proffessionals</h5>
+            <p class="card-text mb-0">People invest their entire lifetime savings in buying property so it is important to get property documents verified and checked before purchasing the property and secure themselves from risk of frauds.</p>                                                                                 </p>
           </div>
         </div> 
       </div>
@@ -179,7 +290,6 @@
           <div class="card-body">
             <h5 class="card-title">Marriage and Divorce Consultation</h5>
             <p class="card-text">You can get advice and support from divorce counselors to help you deal with the challenges of divorce. Divorce experts help to make the process as easy as possible by providing everything from legal counsel to emotional support. </p>
-            <a href="#" class="btn btn-primary">Get Consultation </a>
           </div>
         </div> 
       </div>
@@ -190,46 +300,76 @@
 
 <!-- 4 -->
 <div class="container">
-<div class="accordion" id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          What is Online Legal Consultation ?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Online legal consultation is the provision of legal counsel and assistance via digital channels, enabling people to get expert legal advice while relaxing in their homes or workplaces.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+       Are the lawyers qualified?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          For each lawyer offering online legal consultation services on LegalKart, we have a stringent verification process in place. Each lawyer's required documentation, registrations, and qualifications are manually verified by our team.
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+         How to start online consultation on LawHub?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         Choose your legal concern.
+         Choose the city.
+         Choose the xpert you want to partake your consultation with.
+         Discuss your legal queries.
+        </div>
       </div>
+      <hr>
+  
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+           Is Online Consultation Safe and Secure?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Since protecting the privacy of our users is important to us, we abide by all privacy and confidentiality regulations.
+          </div>
+        </div>
+      
     </div>
   </div>
+  </div>
+<!-- footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#hello" class="nav-link px-2 text-body-secondary">Sign Up</a></li>
+      <li class="nav-item"><a href="#sign" class="nav-link px-2 text-body-secondary">Login</a></li>
+      <li class="nav-item"><a href="#city" class="nav-link px-2 text-body-secondary">Select city</a></li>
+      <li class="nav-item"><a href="#lawyer" class="nav-link px-2 text-body-secondary">Select Advocate</a></li>
+      <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"></a></li> -->
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 LawHub, Inc</p>
+  </footer>
 </div>
-</div>
-
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

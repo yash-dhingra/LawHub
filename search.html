@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+        #p
+          {
+              color:white ;
+          }
+          .parent{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+
+            
+          }
+          .data{
+            width:50%
+          }
+          .butto{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            align-items:center;
+            gap:3px;
+          }
+          body{
+            font-family:'Helvetica, Sans-Serif';
+          }
+         
+      </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"><!-- 24 -->
+        <div class="container-fluid"><!-- 23-->
+            
+            <div ><!-- 22 -->
+                <a class="navbar-brand row" href="#">
+                  <img src="./house-check-fill.svg" alt="Bootstrap" width="30" height="24" class="col px-1">
+                 <span class="col">LawHub</span>
+              </a>
+                  </div><!-- 22-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"><!-- 21 -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Lawyers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Consultation Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Document Verification</a></li>
+                  <li><a class="dropdown-item" href="#">Affidavit Creation</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Divorce/Marriage consultation</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <!-- <div>
+              <button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@getbootstrap">Sign In</button>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email-id</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Create Password</label>
+            <input type="password" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="Submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+<!-- <div>
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@getbootstrap">Log In</button>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email-id</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Enter Password</label>
+            <input type="password" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div> -->
+  </div><!-- 21 -->
+</div><!-- 23 -->
+
+      </nav><!-- 24-->
+
+      <!-- 3 -->
+      <div class="container"><!-- 18-->
+        <div class="container mt-5 name" ><!-- 17 -->
+          <div class="row"><!-- 16 -->
+            <div class ="col-md-5 col-lg-4 px-2 col-md-5 col pt-2"><!-- 15 -->
+                <form>
+                    Select CITY : <select id="city">
+                      <option>select city---</option>
+                      <option>Delhi</option>
+                      
+                      <option>Lucknow</option>
+                      <option>Ahmedabad</option>
+  <option>Bengaluru/Bangalore</option>
+  
+  <option>Chennai</option>
+  
+  <option>Gurgaon</option>
+  <option>Hyderabad/Secunderabad</option>
+  <option>Kolkatta</option>
+  <option>Mumbai</option>
+  <option>Noida</option>
+  <option>Pune</option>
+  
+  <option>Hyderabad/Secunderabad</option>
+  
+  <option>Visakhapatnam</option> 
+  <option>Itanagar</option>
+  <option>Guwahati</option>
+  <option>Patna</option>
+  <option>Surat</option>
+  
+  <option>Shimla</option>
+  
+  <option>Srinagar</option>
+  <option>Mangalore</option>
+  <option>Mysoru/Mysore</option>
+  <option>Chandigarh</option>
+  <option>Jalandhar</option>
+  <option>Ludhiana</option>
+  <option>Allahabad</option>
+  <option>Bareilly</option>
+  <option>Faizabad</option>
+  <option>Ghaziabad</option>
+  <option>Gorakhpur</option>
+  <option>Kanpur</option>
+  <option>Mathura</option>
+  <option>Meerut</option>
+  <option>Moradabad</option>
+  <option>Dehradun</option>
+  <option>Roorkee</option>
+  <option>Durgapur</option>
+  
+  
+                    </select>
+                  </form>
+                </div><!-- 15 -->
+      
+                <div class ="col-xl-4 col-lg-4 px-2 col-md-5 col pt-2 "><!-- 14 -->
+                  <form>
+                    Your Advocate Requirement : <select id="lawyer">
+                      <option>Select your advocate --</option>
+                      <option>Property lawyer</option>
+                      <option>Criminal defense lawyer</option>
+                      <option>Corporate lawyer</option>
+                      <option>Public Defender</option>
+                      <option>Family lawyer</option>
+                      <option>Bankruptcy Lawyer</option>
+                      <option>Immigration lawyer</option>
+                      <option>Real estate lawyer</option>
+                      <option>Divorce lawyer</option>
+                    </select>
+                  </form>
+                  
+                </div><!-- 14 -->
+            <div class="col-md-5 col-lg-4 px-2 col-md-5 col pt-2"><!-- 13 -->
+             
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  
+            </div><!-- 13 -->
+            <div class="row justify-content-center"><!-- 12 -->
+              <div class="col-2 py-3"><!-- 11 -->
+               <a href="./search.html"><button type="button" class="btn btn-primary">search</button></a> 
+              </div><!-- 11 -->
+            </div><!-- 12 -->
+          </div><!-- 16 -->
+          </div><!-- 17-->
+          
+        </div><!--18-->
+      <hr>
+        <div class="parent">  <!-- 6.1 -->
+
+          <div class="card mb-3 data" style="max-width: 540px;">  <!-- 5 -->
+                <div class="card-body">  <!-- 4 -->
+                    <div class="butto">  <!-- 3 -->
+                        <div>  <!-- 1 -->
+                  <h3 class="card-title text-center">Legal House</h3>
+                </div>  <!-- 1 -->
+                <div>  <!-- 2 -->
+                  <p class="card-text"><b></b><br><b>Experience :</b>10 years experience<br>
+                    Greater Kailash Part2<br> Consultation fees - Rs.3000-4000</p>
+                </div>  <!-- 2 -->
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+         Contact here
+         </button>
+        </div>   <!-- 3 -->
+    </div>  <!-- 4 -->
+    </div>  <!-- 5 -->
+        
+  
+  <!-- Modal -->
+           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--6-->
+          <div class="modal-dialog" role="document"><!--5-->
+            <div class="modal-content"><!--4-->
+         <div class="modal-header"><!--3-->
+          <h5 class="modal-title" id="exampleModalLabel">Lawyer Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div><!--3-->
+           <div class="modal-body"><!--2-->
+            <h5 class="card-title">Legal House</h5>
+            <p class="card-text"><b></b><br><b>Experience :</b>10 years experience<br>
+              Greater Kailash Part2<br> Consultation fees - Rs.3000-4000
+          
+        </div><!--2-->
+        <div class="modal-footer"><!--1-->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div><!--1-->
+      </div><!--4-->
+    </div> <!--5-->
+  <!-- 6 --></div>
+
+  <div class="card mb-3 data" style="max-width: 540px;">  <!-- 5 -->
+    <div class="card-body">  <!-- 4 -->
+        <div class="butto">  <!-- 3 -->
+            <div>  <!-- 1 -->
+      <h3 class="card-title text-center">Legal House</h3>
+    </div>  <!-- 1 -->
+    <div>  <!-- 2 -->
+      <p class="card-text"><b></b><br><b>Experience :</b>10 years experience<br>
+        Greater Kailash Part2<br> Consultation fees - Rs.3000-4000</p>
+    </div>  <!-- 2 -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Contact here
+</button>
+</div>   <!-- 3 -->
+</div>  <!-- 4 -->
+</div>  <!-- 5 -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><!--6-->
+<div class="modal-dialog" role="document"><!--5-->
+<div class="modal-content"><!--4-->
+<div class="modal-header"><!--3-->
+<h5 class="modal-title" id="exampleModalLabel">Lawyer Details</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div><!--3-->
+<div class="modal-body"><!--2-->
+<h5 class="card-title">Legal House</h5>
+<p class="card-text"><b></b><br><b>Experience :</b>10 years experience<br>
+  Greater Kailash Part2<br> Consultation fees - Rs.3000-4000
+
+</div><!--2-->
+<div class="modal-footer"><!--1-->
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div><!--1-->
+</div><!--4-->
+</div> <!--5-->
+<!-- 6 --></div>
+                </div> <!-- 6.1 -->
+
+         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
